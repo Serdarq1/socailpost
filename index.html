@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialPost</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+<script>
+    window.isIndexPage = true
+    window.isChatPage = false
+</script>
+</head>
+<body style="background-image: none;">
+    <div class="header d-flex align-items-center justify-content-between container-fluid p-2">
+        <i class="fa-brands fa-slack fa-lg ms-4"></i>
+            <p class="mt-2 text-light me-2">Arkadaşların neler paylaştı?</p>
+    </div>   
+    <div class="row">
+        <div class="aside flex-column d-flex justify-content-evenly align-items-center col-1">
+            <i class="fa-solid fa-house fa-lg text-light"></i>
+            <i class="fa-solid fa-user-group"></i>
+            <a href="./chat.html" class="text-dark"><i class="fa-solid fa-message fa-lg"></i></a>
+        </div>
+
+        <div class="col-2 friends-list d-none">
+            <div class="d-flex mt-5 friend">
+                <div>
+                    <img src="./imgs/614295203f913e42b8ff4520_capsule-video-testimonial-tips-header.jpg" width="50px" height="50px">
+                    <div class="online2"></div>
+                </div>
+                    <div class="ms-2">
+                        <div>Ekin Soybaş</div>
+                        <div class="text-secondary">Çevrim içi</div>
+                    </div>
+            </div>
+
+            <div class="d-flex mt-3 mb-3 friend">
+                <div>
+                    <img src="./imgs/photo-1603415526960-f7e0328c63b1.avif" width="50px" height="50px">
+                    <div class="offline"></div>
+                </div>
+                <div class="ms-2">
+                    <div>Fırat Çınar</div>
+                    <div class="text-secondary">Çevrim dışı</div>
+                </div>
+            </div>
+
+            <div class="d-flex friend">
+                <div>
+                    <img src="./imgs/649-07238897en_Masterfile.jpg" width="50px" height="50px">
+                    <div class="online2"></div>
+                </div>
+                <div class="ms-2">
+                    <div>Eymen Karadeniz</div>
+                    <div class="text-secondary">Çevrim içi</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main col-9">
+
+            <div class="post d-flex justify-content-center mt-3">
+              <div class="d-flex flex-column">
+                <div>
+                    <div class="post-header d-flex align-items-center">
+                        <div class="author-img me-2">
+                            <img src="./imgs/photo-1603415526960-f7e0328c63b1.avif" width="50px" height="50px">
+                        </div>
+                        <div class="post-author">Fırat Çınar</div>
+                    </div>
+                    <div class="post-img mt-3">
+                        <img src="./imgs/Image-3.jpg" width="400px" height="400px" style="border-radius: 0;">
+                    </div>
+                    <div class="post-text mt-2">
+                        Bu hafta sonunu İsviçrede geçiriyorum. Harika bir yer!
+                    </div>
+                   </div>
+    
+                   <div class="mt-5">
+                    <div class="post-header d-flex align-items-center">
+                        <div class="author-img me-2">
+                            <img src="./imgs/649-07238897en_Masterfile.jpg" width="50px" height="50px">
+                        </div>
+                        <div class="post-author">Eymen Karadeniz</div>
+                    </div>
+                    <div class="post-img mt-3">
+                        <img src="./imgs/images.jpg" width="400px" height="400px" style="border-radius: 0;">
+                    </div>
+                    <div class="post-text mt-2">
+                        Her zaman yanınızda sizi seven birinin olması ne kadar da güzel.
+                    </div>
+                   </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="section col-2 py-2">
+            <div class="profile d-flex align-items-center">
+                <img src="./imgs/img4.webp" width="50px" height="50px" class="account-img">
+                <div class="online"></div>
+                <p class="mt-3 ms-2 account-name">@akovaserdar</p>
+            </div>
+            <div class="line mt-3"></div>
+            <div class="about-you">
+                <p class="person-email mt-3 account-mail">serdar.akova5@gmail.com</p>
+                <p class="person-bio">Ülkeleri gezip kamp yapıyorum yaptığım kamplarım da gitar çalarak geçiyor.</p>
+            </div>
+            <button class="btn btn-outline-dark ms-5 mt-3 log-out-btn">Çıkış Yap</button>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/f25b41f955.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>

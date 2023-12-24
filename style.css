@@ -1,0 +1,176 @@
+body {
+    margin: 50px;
+    background-image: url(./imgs/img4.webp);
+  }
+
+input{
+    border-bottom-width: 1px;
+}
+
+input, input::placeholder, h1, h2, .btn,p, div{
+    font-family: Montserrat, sans-serif;
+} 
+
+input, input::placeholder, h1, h2, .btn{
+    background-color: transparent;
+    color: white;
+}
+
+.container1{
+ width: 500px;
+ margin-left: auto;
+ margin-right: auto;
+ border: 1px solid white;
+ border-radius: 10px;
+ margin-top: 5%;
+ padding: 20px;
+}
+
+.aside{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    height: 150vh;
+    width: 50px;
+    background-color: hsl(292, 16%, 49%);
+}
+
+.header{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: hsl(292, 16%, 49%);
+}
+
+i{
+    cursor: pointer;
+}
+
+i:hover{
+   opacity: 0.7;
+   transition: 0.3s;
+}
+
+img{
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.line{
+    width: 200px;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.post-text{
+    width: 300px;
+}
+
+.main{
+    background-color: #FAF9F6;
+}
+
+.section{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.online,.online2,.offline{
+    background-color: lightgreen;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.online{
+    left: -12px;
+    top: 15px;
+}
+
+.online2, .offline{
+    right: -35px;
+    top: -15px;
+}
+
+.offline{
+    background-color: lightgray;
+}
+
+.friend:hover{
+    cursor: pointer;
+    box-shadow: inset 5px 0px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    opacity: 0.9;
+    transition: 0.3;
+}
+
+.container-top, .bottom-left, .bottom-right{
+    background-color: #FAF9F6;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.opacity{
+    opacity: 0.7;
+}
+
+.container-top{
+    border-bottom: 1px solid lightgray
+}
+
+.bottom-right{
+    border-left: 1px solid rgba(211, 211, 211, 0.5);
+}
+
+.chat-name{
+    font-size: 14px;
+}
+
+.chat-info{
+    font-size: 12px;
+}
+
+.chat-person-div:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.message{
+    background-color: hsl(292, 16%, 49%);;
+}
+
+.send-message input{
+    border: none;
+    background-color: hsl(292, 16%, 49%);
+    border-radius: 20px;
+    font-size: 12px;
+    width: 700px;
+}
+
+.send-message input::placeholder{
+    color: lightgray;
+    font-weight: lighter;
+}
+.send-message img{
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.send-message {
+    margin-top: 95px;
+}
+
+.author-img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.post-author{
+    cursor: pointer;
+}
+
+.post-author:hover, .post-text:hover{
+    color: hsl(292, 16%, 49%);
+    transition: 0.3s;
+}
+
+.post-img:hover{
+    opacity: 0.7;
+    border-radius: 20px;
+}

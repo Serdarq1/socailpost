@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialPost Giriş</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+</head>
+<script>
+  window.isIndexPage = true
+  window.isChatPage = true
+</script>
+<body>
+ 
+    <div id="giris-formu" class="container1">
+      <h2 class="text-center text-light mb-5">Giriş Yap</h2>
+        <form class="d-flex flex-column">
+          <input type="text" id="kullanici-girisi" required placeholder="Kullanıcı Adınız" class=" border-start-0 border-top-0 border-end-0 mb-5 border-secondary text-light">
+          
+          <input type="password" id="kullanici-sifre" required placeholder="Şifreniz" class="border-start-0 border-top-0 border-end-0 mb-5 border-secondary text-light">
+          
+          <button type="button" class="btn btn-outline-light" onclick="girisYap()">Giriş Yap</button>
+        </form>
+      </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>

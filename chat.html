@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialPost Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+<script>
+    window.isIndexPage = false
+    window.isChatPage = true
+</script>
+</head>
+<body style="background: none;">
+
+    <div class="header d-flex align-items-center justify-content-between container-fluid p-2">
+        <i class="fa-brands fa-slack fa-lg ms-4"></i>
+            <p class="mt-2 text-light me-2">Arkadaşların neler paylaştı?</p>
+    </div>   
+    <div class="row">
+        <div class="aside flex-column d-flex justify-content-evenly align-items-center col-1">
+            <a href="./index.html" class="text-dark"><i class="fa-solid fa-house fa-lg"></i></a>
+            <i class="fa-solid fa-user-group"></i>
+            <i class="fa-solid fa-message fa-lg text-light"></i>
+        </div>
+
+        <div class="col-2 friends-list d-none">
+            <div class="d-flex mt-5 friend">
+                <div>
+                    <img src="./imgs/614295203f913e42b8ff4520_capsule-video-testimonial-tips-header.jpg" width="50px" height="50px">
+                    <div class="online2"></div>
+                </div>
+                <div class="ms-2">
+                    <div>Ekin Soybaş</div>
+                    <div class="text-secondary">Çevrim içi</div>
+                </div>
+            </div>
+
+            <div class="d-flex mt-3 mb-3 friend">
+                <div>
+                    <img src="./imgs/photo-1603415526960-f7e0328c63b1.avif" width="50px" height="50px">
+                    <div class="offline"></div>
+                </div>
+                <div class="ms-2">
+                    <div>Fırat Çınar</div>
+                    <div class="text-secondary">Çevrim dışı</div>
+                </div>
+            </div>
+
+            <div class="d-flex friend">
+                <div>
+                    <img src="./imgs/649-07238897en_Masterfile.jpg" width="50px" height="50px">
+                    <div class="online2"></div>
+                </div>
+                <div class="ms-2">
+                    <div>Eymen Karadeniz</div>
+                    <div class="text-secondary">Çevrim içi</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="col px-5 mt-2">
+        <div class="container-top">
+            <div class="profile d-flex align-items-center">
+                <img src="./imgs/img4.webp" width="50px" height="50px" class="account-img">
+                <div class="online"></div>
+            </div>
+        </div>
+        <div class="container-bottom d-flex">
+            <div class="chat-div">
+                <div class="bottom-left pe-2 w-100 col-6">
+                    <div class="chat-person-div d-flex align-items-center chat-person1">
+                        <div class="me-2 mt-2">
+                            <img src="./imgs/photo-1603415526960-f7e0328c63b1.avif" width="50px" height="50px" class="account-img">
+                            <div class="offline"></div>
+                        </div>
+                        <di class="chat-person-text">
+                            <div class="chat-name">Fırat Çınar</div>
+                            <div class="text-secondary chat-info">Aynen öyle, ay sonuna kadar...</div>
+                        </div>
+                    </div>
+    
+                    <div class="bottom-left pe-2 w-100">
+                        <div class="chat-person-div d-flex align-items-center chat-person2">
+                            <div class="me-2 mt-2">
+                                <img src="./imgs/614295203f913e42b8ff4520_capsule-video-testimonial-tips-header.jpg" width="50px" height="50px" class="account-img">
+                                <div class="online2"></div>
+                            </div>
+                            <di class="chat-person-text">
+                                <div class="chat-name">Ekin Soybaş</div>
+                                <div class="text-secondary chat-info">İyiyim sen nasılsın?</div>
+                            </div>
+                        </div>
+    
+                        <div class="bottom-left pe-2 w-100 chat-last-person">
+                            <div class="chat-person-div d-flex align-items-center chat-person3">
+                                <div class="me-2 mt-2">
+                                    <img src="./imgs/649-07238897en_Masterfile.jpg" width="50px" height="50px" class="account-img">
+                                    <div class="online2"></div>
+                                </div>
+                                <di class="chat-person-text">
+                                    <div class="chat-name">Eymen Karadeniz</div>
+                                    <div class="text-secondary chat-info">bilgisayarım bozuldu</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-right col-10 msg1">
+                            <div>
+                                <div class="ms-2 mt-2 d-flex align-items-center">
+                                    <div>
+                                        <img src="./imgs/photo-1603415526960-f7e0328c63b1.avif" width="50px" height="50px" class="account-img">
+                                    <div class="offline"></div>
+                                    </div>
+                                    <div class="ms-2">
+                                        Fırat Çınar
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fw-light" id="parent-div">
+                                <div class="d-flex justify-content-end">
+                                    <div class="message text-light rounded-pill w-25 p-2">
+                                        Ay sonuna kadar İsviçrede mi kalıyorsun?
+                                    </div>
+                                </div>
+
+                               
+                                <div class="d-flex justify-content-start">
+                                    <div class="message text-light rounded-pill w-25 p-2 mt-5 mb-5">
+                                        Aynen öyle, ay sonuna kadar burada kalıyorum.
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end">
+                                    <div class="message text-light rounded-pill w-25 p-2">
+                                        Gelirken bir şeyler getir.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="send-message-div d-flex justify-content-center">
+                                <div class="send-message">
+                                    <input type="text" placeholder="Mesaj Gönder" class="send-message-input p-2 ms-2">
+                                    <img src="./imgs/send-icon-2048x2020-jrvk5f1r.png" width="20px" height="20px" id="send">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-right col-10 d-none msg2">
+                            <div>
+                                <div class="ms-2 mt-2 d-flex align-items-center"> 
+                                    <div>
+                                        <img src="./imgs/614295203f913e42b8ff4520_capsule-video-testimonial-tips-header.jpg" width="50px" height="50px" class="account-img">
+                                    <div class="online2"></div>
+                                    </div>
+                                    <div class="ms-2">
+                                        Ekin Soybaş
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fw-light" id="parent-div">
+                                <div class="d-flex justify-content-end">
+                                    <div class="message text-light rounded-pill w-25 p-2">
+                                        Nasılsın?
+                                    </div>
+                                </div>
+
+                               
+                                <div class="d-flex justify-content-start">
+                                    <div class="message text-light rounded-pill w-25 p-2 mt-5 mb-5">
+                                        İyiyim sen nasılsın?
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="send-message-div d-flex justify-content-center">
+                                <div class="send-message">
+                                    <input type="text" placeholder="Mesaj Gönder" class="send-message-input p-2 ms-2">
+                                    <img src="./imgs/send-icon-2048x2020-jrvk5f1r.png" width="20px" height="20px" id="send">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-right col-10 d-none msg3">
+                            <div>
+                                <div class="ms-2 mt-2 d-flex align-items-center">
+                                    <div>
+                                        <img src="./imgs/649-07238897en_Masterfile.jpg" width="50px" height="50px" class="account-img">
+                                    <div class="online2"></div>
+                                    </div>
+                                    <div class="ms-2">
+                                        Eymen Karadeniz
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fw-light" id="parent-div">
+                                <div class="d-flex justify-content-end">
+                                    <div class="message text-light rounded-pill w-25 p-2">
+                                        Oyun oynamıyor musun?
+                                    </div>
+                                </div>
+
+                               
+                                <div class="d-flex justify-content-start">
+                                    <div class="message text-light rounded-pill w-25 p-2 mt-5 mb-5">
+                                        hayır
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end">
+                                    <div class="message text-light rounded-pill w-25 p-2 mt-5 mb-5">
+                                        Neden?
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-start">
+                                    <div class="message text-light rounded-pill w-25 p-2 mt-5 mb-5">
+                                        bilgisayarım bozuldu
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="send-message-div d-flex justify-content-center">
+                                <div class="send-message">
+                                    <input type="text" placeholder="Mesaj Gönder" class="send-message-input p-2 ms-2">
+                                    <img src="./imgs/send-icon-2048x2020-jrvk5f1r.png" width="20px" height="20px" id="send">
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/f25b41f955.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>
